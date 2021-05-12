@@ -12,9 +12,7 @@ app.get("/hello", (req, res) => {
 
 
 app.get("/ping", (req, res) => {
-    res.status(500).json({
-        message: { msgBody: "Something went wrong...", msgError: true },
-    });
+    res.json({inset: "haldljksaf"})
 });
 
 

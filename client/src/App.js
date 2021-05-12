@@ -2,8 +2,7 @@ import AuthService from "./services/AuthService";
 
 
 function App() {
-
-
+  
   const handleClick = async() => {
     const data = await AuthService.ping();
     console.log(data)
