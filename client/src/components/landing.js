@@ -9,7 +9,10 @@ function Landing() {
 
 
     return (
+        <>
         <h1>Landing</h1>
+        <button onClick={handleClick}>Click Me!!!</button>
+        </>
     )
 }
 

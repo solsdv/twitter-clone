@@ -13,11 +13,6 @@ mongoose.connect(
   }
 );
 
-
-app.get("/", (req, res) => {
-    res.send('<h1>Hello Express!</h1>');
-})
-
 app.get("/ping", (req, res) => {
     res.json({inset: "haldljksaf"})
 });
