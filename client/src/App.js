@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import AuthService from "./services/AuthService";
+
 
 function App() {
+
+
+  const handleClick = async() => {
+    const data = await AuthService.ping();
+    console.log(data)
+  }
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <h1>App</h1>
+    <button onClick={handleClick}>Click me</button>
+    </>
+  )
 }
 
 export default App;
