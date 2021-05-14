@@ -1,18 +1,15 @@
 import React from "react";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import Sidebar from "./components/Sidebar.js";
 
-import Hello from "./components/hello";
-import Landing from "./components/landing";
+
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={Landing}/>
-        <Route path="/hello" component={Hello}/>
-      </Switch>
-    </Router>
-  )
+    <div>
+      <Sidebar />
+    </div>
+  );
 }
 
 
